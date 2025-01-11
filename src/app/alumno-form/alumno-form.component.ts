@@ -1,6 +1,6 @@
 import { AlumnoService } from './../service/alumno.service';
 import { Component, OnInit } from '@angular/core';
-import { Alumno } from '../model/alumno';
+import { Alumno } from '../model/Alumno';
 import { FormsModule } from '@angular/forms'
 import { CommonModule } from '@angular/common';
 import Swal from 'sweetalert2';
