@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h1 class="card-title text-center text-primary">
+        {{titulo}}
+      </h1>
+    </div>
+    <div class="card-body">
+      <div class="mb-3">
+        <label class="form-label">Clave</label>
+        <input type="text" class="form-control" name="laClave" id="laClave" disabled [(ngModel)]="carrera.idCarrera"/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="elNombre" id="elNombre" [(ngModel)]="carrera.nombreCarrera" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <input type="text" class="form-control" name="laDescripcion" id="laDescripcion" [(ngModel)]="carrera.descripcionCarrera"/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Duración</label>
+        <input type="number" class="form-control" name="laDuracion" id="laDuracion" [(ngModel)]="carrera.duracionCarrera" />
+      </div>
+      <div class="mb-3">
+        <button
+            type="button"
+            class="btn btn-outline-success form-control"
+            *ngIf="!carrera.idCarrera; else elseBlock"
+            (click)="registrarCarrera()"
+            >
+              Registrar
+            </button>
+            <ng-template #elseBlock>
+              <button type="button" class="btn btn-outline-warning form-control"
+                (click)="actualizarCarrera()"
+              >Actualizar</button>
+            </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

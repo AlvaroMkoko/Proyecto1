@@ -1,0 +1,127 @@
+/* Ajustes generales */
+body {
+    background-color: #f5f3f9; /* Fondo claro violeta */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  /* Estilos para la tarjeta */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    background-color: #6a0dad; /* Morado intenso */
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px 20px;
+  }
+  
+  .card-title {
+    margin: 0;
+  }
+  
+  /* Barra de búsqueda */
+  .input-group input {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .input-group .btn {
+    background-color: #8a2be2; /* Violeta oscuro */
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .input-group .btn:hover {
+    background-color: #702dcf; /* Morado medio */
+    color: white;
+  }
+  
+  /* Estilos para la tabla */
+  .table {
+    margin-top: 15px;
+  }
+  
+  .table thead {
+    background-color: #6a0dad; /* Morado intenso */
+    color: white;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f3e6fa; /* Fondo violeta claro */
+  }
+  
+  .table td, .table th {
+    vertical-align: middle;
+  }
+  
+  /* Botones */
+  .btn-outline-info {
+    color: #9370db; /* Morado claro */
+    border-color: #9370db;
+  }
+  
+  .btn-outline-info:hover {
+    background-color: #9370db;
+    color: white;
+  }
+  
+  .btn-outline-danger {
+    color: #d2698b; /* Rosa morado */
+    border-color: #d2698b;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #d2698b;
+    color: white;
+  }
+  
+  .btn-success {
+    background-color: #9932cc; /* Violeta intermedio */
+    border-color: #9932cc;
+  }
+  
+  .btn-success:hover {
+    background-color: #7a28aa; /* Violeta más oscuro */
+    border-color: #7a28aa;
+  }
+  
+  /* Formulario */
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0d6eb; /* Borde violeta claro */
+    border-radius: 10px;
+  }
+  
+  form h3 {
+    margin-bottom: 20px;
+    color: #6a0dad; /* Morado intenso */
+  }
+  
+  form .form-label {
+    font-weight: bold;
+  }
+  
+  form .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  
+  form .form-control:focus {
+    border-color: #6a0dad; /* Morado intenso */
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.5); /* Sombra morada */
+  }
+  
+  /* Botón para agregar un registro */
+  .btn-success.mt-3 {
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
