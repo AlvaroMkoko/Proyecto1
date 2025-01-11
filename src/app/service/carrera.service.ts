@@ -8,7 +8,7 @@ import { map, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CarreraService {
-  private urlEndPoint: string = "https://escomcarreras.onrender.com/apiCarreras/carreras";
+  private urlEndPoint: string = "https://escomcarreras.onrender.com/apiCarreras/carrera";
   private httpHeaders = new HttpHeaders(
     { ContentType: 'application/json' }
   );
