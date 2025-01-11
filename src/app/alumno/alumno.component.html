@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-tittle text-center text-success">
+          {{ titulo }}
+        </h1>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Clave</th>
+              <th>Apellido Paterno</th>
+              <th>Apellido Materno</th>
+              <th>Nombre</th>
+              <th>Fecha de Nacimiento</th>
+              <th>Correo</th>
+              <th>Carrera</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let a of losAlumnos">
+              <td>{{ a.idAlumno }}</td>
+              <td>{{ a.paternoAlumno }}</td>
+              <td>{{ a.maternoAlumno }}</td>
+              <td>{{ a.nombreAlumno}}</td>
+              <th>{{a.emailAlumno}}</th>
+              <th>{{a.fechaNacimiento}}</th>
+              <th>{{a.idCarrera}}</th>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-info"
+                  [routerLink]="['/alumnoForm',a.idAlumno]"
+                >
+                  Actualizar
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  (click)="delete(a)"
+                >
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+  
+          </tbody>
+        </table>
+        <div class="card-body">
+          <button type="button" class="btn btn-outline-warning form-control"
+            [routerLink]="['/alumnoForm']"
+            > Agrergar </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

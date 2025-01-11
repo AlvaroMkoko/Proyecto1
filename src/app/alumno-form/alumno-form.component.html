@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title text-center text-primary">
+          {{titulo}}
+        </h1>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label class="form-label">ID Alumno</label>
+          <input type="text" class="form-control" name="idAlumno" id="idAlumno" disabled [(ngModel)]="alumno.idAlumno"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Apellido Paterno</label>
+          <input type="text" class="form-control" name="paternoAlumno" id="paternoAlumno" [(ngModel)]="alumno.paternoAlumno" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Apellido Materno</label>
+          <input type="text" class="form-control" name="maternoAlumno" id="maternoAlumno" [(ngModel)]="alumno.maternoAlumno" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Nombre</label>
+          <input type="text" class="form-control" name="nombreAlumno" id="nombreAlumno" [(ngModel)]="alumno.nombreAlumno" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" name="emailAlumno" id="emailAlumno" [(ngModel)]="alumno.emailAlumno" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" name="fechaNacimiento" id="fechaNacimiento" [(ngModel)]="alumno.fechaNacimiento" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Carrera</label>
+          <input type="number" class="form-control" name="idCarrera" id="idCarrera" [(ngModel)]="alumno.idCarrera" />
+        </div>
+        <div class="mb-3">
+          <button
+            type="button"
+            class="btn btn-outline-success form-control"
+            *ngIf="!alumno.idAlumno; else elseBlock"
+            (click)="registrarAlumno()"
+          >
+            Registrar
+          </button>
+          <ng-template #elseBlock>
+            <button 
+              type="button" 
+              class="btn btn-outline-warning form-control"
+              (click)="actualizarAlumno()"
+            >
+              Actualizar
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+  
