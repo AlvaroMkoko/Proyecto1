@@ -1,4 +1,4 @@
-import { Alumno } from './../model/Alumno';
+import { Alumno } from './../model/alumno';
 import { AlumnoService } from './../service/alumno.service';
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
