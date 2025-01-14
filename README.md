@@ -1,10 +1,17 @@
 # Proyecto1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+Frontend de una paguina web conectada a una API localizada en render.
+
+Proyecto realizado para Tecnicas de Desarrollo Web
+
+## Usar diferente API
+
+Para usar una API diferente entrar en alumno.service.ts y carrera.service.ts ubicados en la carpeta /service y cambiar origen en urlEndPoint
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
