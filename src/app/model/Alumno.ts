@@ -1,3 +1,5 @@
+import { Carrera } from "./Carrera";
+
 export class Alumno{
 	idAlumno : number = 0;
 	paternoAlumno : string = '';
@@ -5,5 +7,5 @@ export class Alumno{
 	nombreAlumno : string = '';
 	emailAlumno : string = '';
 	fechaNacimiento :  Date = new Date();
-	idCarrera : number = 0;
+	idCarrera :Carrera = new Carrera();
 }
